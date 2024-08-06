@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --body-bg-color: rgb(159, 155, 198);
+    --primary-color: #724ae8;
+    --main-bg-color: #ffff;
+    --active-user-color: #e1dfdf;
+}
+
+body {
+    background: var(--body-bg-color);
+}
+.container{
+    margin: auto;
+    max-width: 30rem;
+    margin-top: .5rem;
+}
+.chat-container {
+    background: var(--active-user-color);
+    background-color:blanchedalmond;
+    border-radius: 8px;
+}
+
+.select-buttons {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-select {
+    cursor: pointer;
+    text-align: center;
+    width: 49%;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    padding: 10px;
+    background: var(--main-bg-color);
+}
+
+.active-user {
+    background: var(--primary-color);
+    background-color: rgb(61, 235, 46);
+    color: var(--main-bg-color);
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    background: var(--primary-color);
+    background-color: #1722b0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.message-header h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--main-bg-color);
+}
+
+.message {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 6px 8px;
+    border-radius: 4px;
+    background: var(--main-bg-color);
+}
+
+.message-sender {
+    margin-bottom: 3px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.message-sender span {
+    margin-right: 3px;
+}
+.message-text{
+    font-size: 1.1rem;
+}
+
+
+.message-timestamp {
+    font-size: .9rem;
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+}
+
+.chat-messages {
+    overflow-y: scroll;
+    position: relative;
+    padding: 15px 10px;
+    height: 20em;
+
+}
+
+.chat-messages::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-form {
+    padding: 0 10px;
+    margin: 1rem 0;
+}
+
+.inputBox {
+    outline: 0;
+    padding: 7px;
+    font-size: 1rem;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #C6C5C7;
+}
+
+button {
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    color: #fff;
+    background: var(--primary-color);
+    background-color:darkmagenta;
+
+}
+
+.clear {
+    text-align: center;
+    padding: 10px;
+}
+
+.blue {
+    color: #1a8eed;
+}
+
+.pink {
+    color: #dd2acb;
+}
